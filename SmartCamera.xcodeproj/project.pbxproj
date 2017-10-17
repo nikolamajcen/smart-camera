@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F051B041F95D5320033B773 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F051B031F95D50D0033B773 /* Resnet50.mlmodel */; };
 		4FDF63C61F95420400EDD2F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF63C51F95420400EDD2F3 /* AppDelegate.swift */; };
 		4FDF63C81F95420400EDD2F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF63C71F95420400EDD2F3 /* ViewController.swift */; };
 		4FDF63CB1F95420400EDD2F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF63C91F95420400EDD2F3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F051B031F95D50D0033B773 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		4FDF63C21F95420400EDD2F3 /* SmartCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF63C51F95420400EDD2F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDF63C71F95420400EDD2F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F051B001F95D4C50033B773 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FDF63D11F95420400EDD2F3 /* Info.plist */,
+				4FDF63CC1F95420400EDD2F3 /* Assets.xcassets */,
+				4FDF63C91F95420400EDD2F3 /* Main.storyboard */,
+				4FDF63CE1F95420400EDD2F3 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F051B011F95D4D70033B773 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4F051B021F95D4F30033B773 /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				4F051B031F95D50D0033B773 /* Resnet50.mlmodel */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
 		4FDF63B91F95420400EDD2F3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +82,11 @@
 		4FDF63C41F95420400EDD2F3 /* SmartCamera */ = {
 			isa = PBXGroup;
 			children = (
+				4F051B021F95D4F30033B773 /* CoreML */,
+				4F051B011F95D4D70033B773 /* Classes */,
 				4FDF63C51F95420400EDD2F3 /* AppDelegate.swift */,
 				4FDF63C71F95420400EDD2F3 /* ViewController.swift */,
-				4FDF63C91F95420400EDD2F3 /* Main.storyboard */,
-				4FDF63CC1F95420400EDD2F3 /* Assets.xcassets */,
-				4FDF63CE1F95420400EDD2F3 /* LaunchScreen.storyboard */,
-				4FDF63D11F95420400EDD2F3 /* Info.plist */,
+				4F051B001F95D4C50033B773 /* Resources */,
 			);
 			path = SmartCamera;
 			sourceTree = "<group>";
@@ -137,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDF63C81F95420400EDD2F3 /* ViewController.swift in Sources */,
+				4F051B041F95D5320033B773 /* Resnet50.mlmodel in Sources */,
 				4FDF63C61F95420400EDD2F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +303,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SmartCamera/Info.plist;
+				DEVELOPMENT_TEAM = 7R59B448X8;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartCamera/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.infinum.SmartCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +318,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SmartCamera/Info.plist;
+				DEVELOPMENT_TEAM = 7R59B448X8;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartCamera/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.infinum.SmartCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
