@@ -51,6 +51,7 @@
 		4F051B011F95D4D70033B773 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4FDF63C71F95420400EDD2F3 /* ViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -61,6 +62,14 @@
 				4F051B031F95D50D0033B773 /* Resnet50.mlmodel */,
 			);
 			path = CoreML;
+			sourceTree = "<group>";
+		};
+		4F051B061F95E2830033B773 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4FDF63C51F95420400EDD2F3 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		4FDF63B91F95420400EDD2F3 = {
@@ -82,10 +91,9 @@
 		4FDF63C41F95420400EDD2F3 /* SmartCamera */ = {
 			isa = PBXGroup;
 			children = (
-				4F051B021F95D4F30033B773 /* CoreML */,
+				4F051B061F95E2830033B773 /* Application */,
 				4F051B011F95D4D70033B773 /* Classes */,
-				4FDF63C51F95420400EDD2F3 /* AppDelegate.swift */,
-				4FDF63C71F95420400EDD2F3 /* ViewController.swift */,
+				4F051B021F95D4F30033B773 /* CoreML */,
 				4F051B001F95D4C50033B773 /* Resources */,
 			);
 			path = SmartCamera;
